@@ -1,0 +1,42 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package clase_estructura._de._datos;
+
+/**
+ *
+ * @author Wagner
+ */
+public class Clase_Estructura_de_datos {
+
+
+
+    /**
+     * @param args the command line arguments
+     */
+
+    //Invertir la palabra
+ 
+     public static void main(String[] args) {
+      String palabra = "Poder";
+        System.out.println(anagrama(palabra,palabra.length()-1));
+     }
+     public static String anagrama(String anagrama,int tamaño)  {
+         if(tamaño==0){
+             return anagrama.charAt(tamaño)+"";
+         }else{
+             return anagrama.charAt (tamaño) + (anagrama(anagrama,tamaño -1));
+             
+       
+          }
+     }
+         
+
+     }
+
+   
+        
+    
+    
+
